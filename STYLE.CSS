@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  overflow-y: auto;
+  transition: background 1s ease;
+}
+
+body.clear-sky {
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+  background-size: cover;
+  color: #222;
+}
+
+body.clouds {
+  background: url('https://images.unsplash.com/photo-1499346030926-9a72daac6c63?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+  background-size: cover;
+  color: #222;
+}
+
+body.rain {
+  background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+  background-size: cover;
+  color: #eee;
+}
+
+body.snow {
+  background: url('https://images.unsplash.com/photo-1516408320191-11a2175f9d2e?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+  background-size: cover;
+  color: #222;
+}
+
+body.thunderstorm {
+  background: url('https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+.app-container {
+  background: rgba(255, 255, 255, 0.85);
+  max-width: 440px;
+  margin: 40px auto;
+  border-radius: 15px;
+  padding: 30px 35px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  color: #000;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+}
+
+button {
+  padding: 12px 18px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#clearBtn {
+  background-color: #dc3545;
+}
+
+#clearBtn:hover {
+  background-color: #a71d2a;
+}
+
+.weather-box {
+  text-align: center;
+}
+
+.weather-box img {
+  width: 100px;
+  margin: 10px 0;
+}
+
+.details {
+  text-align: left;
+  margin-top: 15px;
+}
+
+.details p {
+  margin: 6px 0;
+  font-weight: 600;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#loading {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+#historyList {
+  list-style: none;
+  padding-left: 0;
+  max-height: 100px;
+  overflow-y: auto;
+  border-top: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+#historyList li {
+  cursor: pointer;
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s ease;
+}
+
+#historyList li:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.forecast-box {
+  margin-top: 25px;
+}
+
+.forecast-cards {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+
+.forecast-card {
+  flex: 0 0 120px;
+  background: rgba(255,255,255,0.8);
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.forecast-card img {
+  width: 50px;
+  height: 50px;
+}

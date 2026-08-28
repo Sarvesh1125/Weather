@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Advanced Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <h1>🌦️ Advanced Weather App</h1>
+
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city..." autocomplete="off" />
+      <button id="getWeatherBtn">🔍 Search</button>
+      <button id="clearBtn">✖ Clear</button>
+    </div>
+
+    <div id="loading" class="hidden">Loading...</div>
+    <div id="error" class="error hidden"></div>
+
+    <div id="weatherResult" class="weather-box hidden">
+      <h2 id="location"></h2>
+      <p id="localTime"></p>
+      <img id="weatherIcon" alt="Weather Icon" />
+      <p id="description"></p>
+
+      <div class="details">
+        <p id="temperature"></p>
+        <p id="feelsLike"></p>
+        <p id="minMaxTemp"></p>
+        <p id="humidity"></p>
+        <p id="pressure"></p>
+        <p id="visibility"></p>
+        <p id="wind"></p>
+        <p id="windDirection"></p>
+        <p id="sunrise"></p>
+        <p id="sunset"></p>
+        <p id="coordinates"></p>
+        <p id="uvIndex"></p>
+      </div>
+
+      <h3>Recent Searches</h3>
+      <ul id="historyList"></ul>
+    </div>
+
+    <div id="forecast" class="forecast-box hidden">
+      <h3>7‑Day Forecast</h3>
+      <div id="forecastCards" class="forecast-cards"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
